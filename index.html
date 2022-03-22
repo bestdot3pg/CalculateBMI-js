@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <title>โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI)</title>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI)</h1>
+    </div>
+    <div class="container pt-5 text-left">
+       <div class="pt-5">
+           <label for="kg">น้ำหนัก (กิโลกรัม) :</label>
+           <input type="number" class="form-control" id="int-kg" placeholder="กรอกน้ำหนักของคุณ" name="kg" min="1">
+       </div>
+       <div class="pt-5">
+           <label for="cm">ส่วนสูง (เซนติเมตร) :</label>
+           <input type="number" class="form-control" id="int-cm" placeholder="กรอกส่วนสูงของคุณ" name="cm" min="1">
+       </div>
+    </div>
+    <div class="container pt-5 text-left">
+        <input type="button" class="btn btn-primary" value="คำนวณ" onclick="main()">
+    </div>
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+        <h4>BMI</h4>
+        <p id="output-bmi">0</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: thon;
+    src: url(fonts/THSarabunNew.ttf);
+}
+
+body {
+    font-family: thon;
+}
